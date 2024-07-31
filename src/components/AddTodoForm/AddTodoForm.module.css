@@ -1,0 +1,13 @@
+.addForm {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+.close {
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  background-color: #006d3886;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}

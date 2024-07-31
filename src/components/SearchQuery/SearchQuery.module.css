@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+.search {
+  font-weight: 600;
+  color:#006d3886;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.main {
+  height: 27px;
+  padding: 0 20px;
+  background: #d5ffeb;
+  border: 2px solid #006d3886;
+}

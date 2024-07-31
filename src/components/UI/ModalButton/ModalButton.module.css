@@ -1,0 +1,19 @@
+.newButton {
+  background-color: #00d66f;
+  color:#d5ffeb;
+  padding: 5px 20px;
+  border: 2px solid #006d3886;
+  cursor: pointer;
+  height: auto;
+  margin: 5px 0;
+}
+.newButton:hover {
+  background-color: #d5ffeb;;
+  color:#00d66f;
+  border: 2px solid #006d3886;
+}
+.newButton:active {
+  background-color: #00d66f;;
+  color:#ffffff;
+  border: 2px solid #006d3886;
+}

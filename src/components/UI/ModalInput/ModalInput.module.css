@@ -1,0 +1,9 @@
+.modalImput {
+  background: #d5ffeb;
+  display: block;
+  width: 500px;
+  height: 30px;
+  padding: 0  15px;
+  margin-bottom: 10px;
+  border: 2px solid #006d3886;
+}

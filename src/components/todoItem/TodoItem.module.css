@@ -1,0 +1,33 @@
+.blockp {
+  padding: 2px 2px;
+  margin: 0;
+}
+
+.blockNumbeName {
+  padding: 5px 5px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.containerBlock {
+  flex-direction: column;
+  width: 800px;
+  display: flex;
+  margin: 5px 0;
+
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d5ffeb;
+  border: 1px solid #00d66f;
+  padding: 0  20px 0 10px;
+  margin-bottom: 10px;
+}
+
+.containerNumberName {
+  display: flex;
+}
