@@ -11,7 +11,7 @@ export const selectError = (state) => state.todos.error;
 
 export const selectSearchQuery  = state => state.todos.searchQuery
 export const selectSearchType  = state => state.todos.searchType
-export const modalWindoIisOpen = state => state.todos.modalWindow
+export const selectModalWindoIisOpen = state => state.todos.modalWindow
 
 // Селектор для фильтрации задач по поисковому запросу
 export const selectFiltredTodos = createSelector(
