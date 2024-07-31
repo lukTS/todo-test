@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from '../../axiosConfig';
+import axios from '../axiosConfig';
 
 // Асинхронное действие для получения списка задач
 export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './TodoItem.module.css'
 import ModalButton from '../UI/ModalButton/ModalButton'
 import { useDispatch } from 'react-redux'
-import { deleteTodo } from '../../store/todoSlice'
+import { deleteTodo } from '../../store/todosAsyncActions'
 
 export default function TodoItem({ index, nameTodo, textTodo, id }) {
   const dispatch = useDispatch()

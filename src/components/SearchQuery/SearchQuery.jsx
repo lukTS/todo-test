@@ -4,11 +4,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setNewSearchQuery, setSearchTypeByText, setSearchTypeByTitle } from '../../store/todoSlice'
 import styles from './SearchQuery.module.css'
 import ModalCheckBox from '../UI/ModalCheckBox/ModalCheckBox'
+import { selectSearchQuery, selectSearchType } from '../../store/selectors'
 
 export default function SearchQuery() {
-  const dispatch = useDispatch()
-  let dataQuery = useSelector(state => state.todos.searchQuery)
-  let searchType = useSelector(state => state.todos.searchType)
+  const dispatch = useDispatch() 
+  let dataQuery = useSelector(selectSearchQuery)
+  let searchType = useSelector(selectSearchType)
   function saveSearchQuery(e) {
     dispatch(setNewSearchQuery({searchQuery: e.target.value}))
   }
