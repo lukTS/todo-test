@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import ModalButton from '../UI/ModalButton/ModalButton'
 import ModalInput from '../UI/ModalInput/ModalInput'
-import { modalWindowOpenClose, addTodo } from '../../store/todoSlice';
+import { modalWindowOpenClose } from '../../store/todoSlice'
+import { addTodo } from '../../store/todosAsyncActions'
 import { useDispatch } from 'react-redux'
 import styles from './AddTodoForm.module.css'
 

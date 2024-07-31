@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import TodoItem from '../todoItem/TodoItem'
 import styles from './TodoList.module.css'
 import ModalButton from '../UI/ModalButton/ModalButton'
-import { modalWindowOpenClose, fetchTodos } from '../../store/todoSlice'
+import { modalWindowOpenClose } from '../../store/todoSlice'
+import { fetchTodos } from '../../store/todosAsyncActions'
 import { selectFiltredTodos } from '../../store/selectors'
 
 export default function TodoList() {

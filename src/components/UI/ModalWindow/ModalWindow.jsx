@@ -2,12 +2,12 @@ import React from 'react'
 import styles from './ModalWindow.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { modalWindowOpenClose } from '../../../store/todoSlice'
+import { modalWindoIisOpen } from '../../../store/selectors'
 
 export default function ModalWindow({children}) {
   const dispatch = useDispatch()
   const rootClasses = [styles.containerModal]
-  let isOpen = useSelector(state => state.todos.modalWindow)
-  console.log(isOpen)
+  let isOpen = useSelector(modalWindoIisOpen)
   if(isOpen) {
     rootClasses.push(styles.active)
   }

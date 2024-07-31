@@ -9,11 +9,11 @@ export const selectStatus = (state) => state.todos.status;
 // Селектор для получения ошибки
 export const selectError = (state) => state.todos.error;
 
+export const selectSearchQuery  = state => state.todos.searchQuery
+export const selectSearchType  = state => state.todos.searchType
+export const modalWindoIisOpen = state => state.todos.modalWindow
+
 // Селектор для фильтрации задач по поисковому запросу
-
-const selectSearchQuery  = state => state.todos.searchQuery
-const selectSearchType  = state => state.todos.searchType
-
 export const selectFiltredTodos = createSelector(
   [selectTodos, selectSearchQuery, selectSearchType],
   (todos, searchQuery, searchType) => {

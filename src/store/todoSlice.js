@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from '../axiosConfig'
+import {fetchTodos, addTodo, deleteTodo} from './todosAsyncActions'
 
-export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {
+/*export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {
   const response = await axios.get('/todos')
   return response.data
 });
@@ -14,7 +15,7 @@ export const addTodo = createAsyncThunk('todos/addTodo', async (todo) => {
 export const deleteTodo = createAsyncThunk('todos/deleteTodo', async (id) => {
   await axios.delete(`/todos/${id}`)
   return id;
-});
+});*/
 
 const todoSlice = createSlice({
   name: 'todos',
